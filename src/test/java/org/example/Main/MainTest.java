@@ -19,6 +19,7 @@ public class MainTest extends BasePage {
     @Test(priority = 1)
     public void testingCreatingBoard() {
         Response response = createBoard("NewBoard","/boards");
+
         assertName(response,"NewBoard");
     }
 
